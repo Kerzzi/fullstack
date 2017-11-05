@@ -1,0 +1,9 @@
+<h1> Edit a post </h1>
+
+<%= simple_form_for [:admin, @post ] do |post| %>
+
+<%= post.input :title %>
+<%= post.input :description %>
+
+<%= post.submit "Submit" %>
+<% end %>
