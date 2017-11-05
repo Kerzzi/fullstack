@@ -1,0 +1,9 @@
+<h1>Add a post </h1>
+
+<%= simple_form_for @post do |post| %>
+
+<%= post.input :title %>
+<%= post.input :description %>
+
+<%= post.submit "Submit" %>
+<% end %>
