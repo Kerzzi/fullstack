@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'posts#index'
   
   resources :dashboard
+  resources :courses
   
   namespace :admin do
     resources :posts
