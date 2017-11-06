@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   resources :posts
   root 'posts#index'
   
+  resources :dashboard
+  
   namespace :admin do
     resources :posts
   end
