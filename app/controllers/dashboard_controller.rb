@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
   def index
-    flash[:notice] = "sss"
+    @courses = Course.all
   end
 end
