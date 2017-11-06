@@ -1,0 +1,9 @@
+<h1> Edit a course</h1>
+
+<%= simple_form_for [:admin,@course] do |course| %>
+
+<%= course.input :title %>
+<%= course.input :description %>
+
+<%= course.submit "Submit" %>
+<% end %>
