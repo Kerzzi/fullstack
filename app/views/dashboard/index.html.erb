@@ -1,16 +1,51 @@
 <div class="row">
   <div class="col-md-3">
-    <p>sidebar</p>
+    <div class="panel panel-primary">
+      <div class="panel-heading">最新通知</div>
+      <div class="panel-body">
+        各位同学，高阶课程《Rails 代码重构》已经上线，点击这里开始学习。
+      </div>
+    </div>
+    
+    <div class="panel panel-primary">
+      <div class="panel-heading">课程时间表</div>
+      <div class="panel-body">
+        各位同学，高阶课程《Rails 代码重构》已经上线，点击这里开始学习。
+      </div>
+    </div>
+    
+    <div class="panel panel-primary">
+      <div class="panel-heading">我的任务</div>
+      <div class="panel-body">
+        各位同学，高阶课程《Rails 代码重构》已经上线，点击这里开始学习。
+      </div>
+    </div>
+    
+    <div class="panel panel-primary">
+      <div class="panel-heading">同学说</div>
+      <div class="panel-body">
+        各位同学，高阶课程《Rails 代码重构》已经上线，点击这里开始学习。
+      </div>
+    </div>
+    
   </div>
   
   <div class="col-md-9">
-    <table class="table table-bordered">
-      <% @courses.each do |course| %>
-      <tr>
-        <td><%= link_to(course.title, course_path(course)) %></td>
-        <td><%= course.created_at %></td>
-      </tr>
-      <% end %>
-    </table>
+    <div class="panel panel-success">
+      <div class="panel-heading">同学说</div>
+      <div class="panel-body">
+        各位同学，高阶课程《Rails 代码重构》已经上线，点击这里开始学习。
+      </div>
+      
+      <table class="table table-bordered">
+        <% @courses.each do |course| %>
+        <tr>
+          <td><%= link_to(course.title, course_path(course)) %></td>
+          <td><%= course.created_at %></td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
   </div>
+  
 </div>
