@@ -1,5 +1,27 @@
-<h1><%= @course.title %></h1>
+<div class="course-block" id="show-content">
+  <div class="row">
+    <div class="course-des">
+      <h3><i class="fa fa-credit-card"></i>课程简介</h3>
+      <div class="purchase-course-lp course-description-style">
+        <div>
+          <p><%= simple_format(@course.description) %></p>
+        </div>
+      </div>
 
-<p>
-  <%= simple_format(@course.description) %>
-</p>
+      <div class="course-action">
+        <a class="action-btn" href="#">开始学习</a>
+      </div>
+      <hr/>
+      <div class="operate-intro">
+        <h3>
+          <i class="fa fa-check-square-o"></i>操作提示
+        </h3>
+        <p>请按照教材目录的顺序学习，并完成相应的作业。</p>
+        <p>查看教材 Post 时，可以使用键盘左/右键进行上一页/下一页的切换。</p>
+        <p>课程中遇到问题可以先查看 FAQ 解答。</p>
+        <p>可以使用搜索功能快速查找本教材中的内容。</p>
+        <p>在动态里可以看到本课程其他同学提交的作业。</p>
+      </div>
+    </div>
+  </div>
+</div>

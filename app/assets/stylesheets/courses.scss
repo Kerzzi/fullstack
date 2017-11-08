@@ -1,3 +1,95 @@
-// Place all the styles related to the courses controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* 这段CSS为什么没有效果呢？ */
+.course_menu{
+  display: block;
+  box-sizing: border-box;
+  // width: 100%;
+  height: 65px;
+  background-color: rgba(255,255,255,0.94);
+  border-bottom: 1px solid #dedede;
+  .menu-content{
+    padding-top: 30px;
+    .right-block{
+      float: right;
+      
+    .tab_menu .nav-tabs>li.active>a{
+      margin-right: 0;
+      line-height: 1.42857143;
+      border: 0;
+      border-radius: 0;
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.3em;
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      }
+    }
+    .left-block{
+      float: left;
+    }
+    h1{
+      font-size: 14px;
+    }
+    a{
+      text-decoration: none;
+      color: #444;
+    }
+  }
+}
+
+
+.course-block {
+    position: relative;
+    // display: block;
+    // margin: 20px auto;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    min-height: 400px;
+    // box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.25);
+    // padding: 30px 60px;
+    // border-radius: 1px;
+  h3{
+    font-size: 16px;
+    line-height: 50px;
+  }
+  a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+  }
+  .course-action {
+      display: block;
+      height: 90px;
+      width: 100%;
+      text-align: center;
+      padding-top: 40px;
+  }
+  i{
+    color: #1ecd97;
+  }
+  .action-btn {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      cursor: pointer;
+      margin: 0 auto;
+      -webkit-border-radius: 0.2em;
+      border-radius: 0.2em;
+      text-align: center;
+      font-size: 1.428em;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      padding: 0.57em 1.9em;
+      margin-top: 2.85em;
+      text-align: center;
+      -o-text-overflow: clip;
+      text-overflow: clip;
+      letter-spacing: 2px;
+      color: white;
+      background: #1ecd97;
+      border: 2px solid #1ecd97;
+      -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+      -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+      -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+      transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),color 0.3s cubic-bezier(0, 0, 0, 0),width 0.3s cubic-bezier(0, 0, 0, 0),border-width 0.3s cubic-bezier(0, 0, 0, 0),border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  }
+}
