@@ -1,39 +1,42 @@
 /* 这段CSS为什么没有效果呢？ */
-.course_menu{
-  display: block;
-  box-sizing: border-box;
-  // width: 100%;
-  height: 65px;
+.course-menu{
+  display:block;
+  // box-sizsing: border-box;
+  width: 100%;
+  height: 55px;
   background-color: rgba(255,255,255,0.94);
   border-bottom: 1px solid #dedede;
+  a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+    color: #444;
+    background-color: transparent;
+  }
   .menu-content{
-    padding-top: 30px;
+    
     .right-block{
       float: right;
       
-    .tab_menu .nav-tabs>li.active>a{
-      margin-right: 0;
-      line-height: 1.42857143;
-      border: 0;
-      border-radius: 0;
-      color: #333;
-      font-size: 14px;
-      font-weight: bold;
-      letter-spacing: 0.3em;
-      padding-bottom: 5px;
-      border-bottom: 2px solid transparent;
+      a{
+        line-height: 1.42857143;
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.3em;
+        }
+      .nav-tabs {
+        border-bottom: 2px solid transparent;
       }
+    }
+    .search-block{
+      float: left;
     }
     .left-block{
       float: left;
     }
     h1{
-      font-size: 14px;
+      font-size: 20px;
     }
-    a{
-      text-decoration: none;
-      color: #444;
-    }
+
   }
 }
 
