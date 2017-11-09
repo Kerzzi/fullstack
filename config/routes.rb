@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resources :posts
   resources :courses do
     resources :syllabuses
+    resources :assignments
+    resources :faqs
+    resources :activities
   end
   
   namespace :admin do
