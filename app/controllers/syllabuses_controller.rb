@@ -1,16 +1,9 @@
 class SyllabusesController < ApplicationController
   before_action :authenticate_user!, :only => [:new, :create]
   
-  
   layout "course"
   
   def index
-    @course = Course.find(params[:course_id])
-    @syllabus = @course.syllabus
-  end
-  
-  # show页面后期观察下，是否可以取消
-  def show
     @course = Course.find(params[:course_id])
     @syllabus = @course.syllabus
   end

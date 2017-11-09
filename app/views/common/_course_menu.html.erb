@@ -24,9 +24,9 @@
         <ul class="nav nav-tabs">
           <li><%= link_to(content_tag(:i,"概览", class: 'fa fa-television'), course_path(@course)) %></li>        
           <li><%= link_to(content_tag(:i,"教材",class: "fa fa-list-ul"), course_syllabuses_path(@course)) %></li>
-          <li><%= link_to(content_tag(:i,"作业", class: "fa fa-file-code-o"),"#") %></li>
-          <li><%= link_to(content_tag(:i,"FAQ", class: "fa fa-comments-o"), "#") %></li>
-          <li><%= link_to(content_tag(:i,"动态", class: "fa fa-tags"), "#") %></li>
+          <li><%= link_to(content_tag(:i,"作业", class: "fa fa-file-code-o"),course_assignments_path(@course)) %></li>
+          <li><%= link_to(content_tag(:i,"FAQ", class: "fa fa-comments-o"), course_faqs_path(@course)) %></li>
+          <li><%= link_to(content_tag(:i,"动态", class: "fa fa-tags"), course_activities_path(@course)) %></li>
           <li><a href="#"><i class="fa fa-star-o"></i>积分榜</a></li>
         </ul>
       </div>
