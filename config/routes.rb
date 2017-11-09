@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   
   resources :dashboard
   resources :posts
-  resources :courses
+  resources :courses do
+    resources :syllabus
+  end
   
   namespace :admin do
     resources :posts
