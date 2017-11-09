@@ -1,2 +1,2 @@
-class Admin::SyllabusesController < ApplicationController
+class Admin::SyllabusesController < Admin::BaseController
 end

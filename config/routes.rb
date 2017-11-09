@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   end
   
   namespace :admin do
+    root 'welcome#index'
     resources :posts
     resources :courses do
       resources :syllabuses

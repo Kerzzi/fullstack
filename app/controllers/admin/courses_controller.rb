@@ -13,6 +13,8 @@ class Admin::CoursesController < Admin::BaseController
     @course = Course.new
   end
   
+  # 新建课程的时候，将faq等页面一起建立，参考rails 百宝箱 嵌套表单 10-1
+  
   def create
     @course = Course.new(course_params)
     

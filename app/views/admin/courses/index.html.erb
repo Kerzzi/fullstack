@@ -1,16 +1,29 @@
-<div class = "pull-right">
-  <%= link_to("Add a course", new_admin_course_path, :class => "btn btn-default") %>
+<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading text-center">教程管理</div>
+  <div class="panel-body">
+    <div class = "pull-right">
+      <%= link_to("Add a course", new_admin_course_path, :class => "btn btn-primary") %>
+    </div>
+    <p>...</p>
+  </div>
+
+  <!-- Table -->
+  <table class="table table-bordered">
+    <% @courses.each do |course| %>
+    
+    <tr>
+      <td><%= link_to(course.title, admin_course_path(course)) %></td>
+      <td>
+        <%= link_to("Edit", edit_admin_course_path(course)) %> |
+        <%= link_to("Destroy", admin_course_path(course), :method => :delete, :data => { :comfirm => "Are you sure?"}) %>
+      </td>
+      <td><%= course.created_at.to_s(:db) %></td>
+    </tr>
+    <% end %>
+  </table>
 </div>
 
-<table class="table table-bordered">
-  <% @courses.each do |course| %>
-  <tr>
-    <td><%= link_to(course.title, admin_course_path(course)) %></td>
-    <td>
-      <%= link_to("Edit", edit_admin_course_path(course)) %> |
-      <%= link_to("Destroy", admin_course_path(course), :method => :delete, :data => { :comfirm => "Are you sure?"}) %>
-    </td>
-    <td><%= course.created_at %></td>
-  </tr>
-  <% end %>
-</table>
+
+
+
