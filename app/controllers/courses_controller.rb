@@ -5,6 +5,7 @@ class CoursesController < ApplicationController
   
   def show
     @course = Course.find(params[:id])
+    @syllabus = @course.syllabus
   end
   
   def index

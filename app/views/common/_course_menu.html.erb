@@ -22,11 +22,11 @@
     <div class="right-block">
       <div class="tab_menu">
         <ul class="nav nav-tabs">
-          <li><a href="#"><i class="fa fa-television"></i>概览</a></li>          
-          <li><a href="#"><i class="fa fa-list-ul"></i>教材</a></li>
-          <li><a aria-current="page" href="#"><i class="fa fa-file-code-o"></i>作业</a></li>          
-          <li><a href="#"><i class="fa fa-comments-o"></i>FAQ</a></li>          
-          <li><a href="#"><i class="fa fa-tags"></i>动态</a></li>
+          <li><%= link_to(content_tag(:i,"概览", class: 'fa fa-television'), course_path(@course)) %></li>        
+          <li><%= link_to(content_tag(:i,"教材",class: "fa fa-list-ul"), course_syllabuses_path(@course)) %></li>
+          <li><%= link_to(content_tag(:i,"作业", class: "fa fa-file-code-o"),"#") %></li>
+          <li><%= link_to(content_tag(:i,"FAQ", class: "fa fa-comments-o"), "#") %></li>
+          <li><%= link_to(content_tag(:i,"动态", class: "fa fa-tags"), "#") %></li>
           <li><a href="#"><i class="fa fa-star-o"></i>积分榜</a></li>
         </ul>
       </div>
