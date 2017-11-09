@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>后台管理</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+    <%= render "admin/common/navbar" %>
+
+    <div class="container main-content">
+      <%= render "common/flashes" %>
+      
+      <div class="row">
+        <div class="col-md-9">
+          <!-- <%= render "admin/common/course_menu" %> -->
+          <div class="show-content">
+            <%= yield %>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="panel panel-primary">
+            <!-- Default panel contents -->
+            <div class="panel-heading">快捷管理</div>
+            <div class="panel-body">
+              <p>应该在后台放一份使用说明！</p>
+            </div>
+
+            <!-- List group -->
+            <ul class="list-group">
+              <li class="list-group-item">教程管理</li>
+              <li class="list-group-item">文章管理</li>
+              <li class="list-group-item">用户管理</li>
+              <li class="list-group-item">订单管理</li>
+              <li class="list-group-item">常用管理</li>
+              <li class="list-group-item">返回前台</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <%= render "common/footer" %>
+  </body>
+</html>

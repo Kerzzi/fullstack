@@ -8,8 +8,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
-              <li><%= link_to("学习中心", dashboard_index_path) %></li>
-              <li><%= link_to("交流论坛", "#") %></li>
+              <li><%= link_to("教程管理", "#") %></li>
+              <li><%= link_to("文章管理", "#") %></li>
+              <li><%= link_to("用户管理", "#") %></li>
+              <li><%= link_to("订单管理", "#") %></li>
+              <li><%= link_to("常用工具", "#") %></li>
+              <li><%= link_to("返回前台", dashboard_index_path) %></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
@@ -22,12 +26,15 @@
                         Hi!,<%= current_user.email %>
                         <b class="caret"></b>
                     </a>
-                    <ul class="dropdown-menu">       
+                    <ul class="dropdown-menu">
+                      <li><%= link_to("个人主页", "#") %></li>  
                       <% if current_user.admin? %>
-                        <li><%= link_to("后台管理", admin_courses_path) %></li>                      
+                      
+                        <li><%= link_to("教程管理", admin_courses_path) %></li>
+                        <li><%= link_to("文章管理", admin_posts_path) %></li>
+                        
                       <% end %>
                         <li role="separator" class="divider"></li>
-                        <li><%= link_to("个人主页", "#") %></li> 
                         <li><%= link_to("我的账户", "#") %></li>
                         <li><%= link_to("我的订单", "#") %></li>
                         <li><%= link_to("我的收藏", "#") %></li>

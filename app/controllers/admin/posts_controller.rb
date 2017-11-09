@@ -1,6 +1,5 @@
-class Admin::PostsController < ApplicationController
+class Admin::PostsController < Admin::BaseController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
-  before_action :require_is_admin
   
   def show
     @post = Post.find(params[:id])
