@@ -11,7 +11,10 @@
       <div class="course-action">
         <a class="action-btn" href="#">购买课程</a>
         <a class="action-btn" href="#">开始学习</a>
-        <%= link_to("新建目录", new_course_syllabus_path(@course), class: "btn btn-danger")%>
+        <%= link_to("新建目录页", new_course_syllabus_path(@course), class: "btn btn-danger")%>
+        <%= link_to("新建作业页", new_course_assignment_path(@course), class: "btn btn-danger")%>
+        <%= link_to("新建FAQ页", new_course_faq_path(@course), class: "btn btn-danger")%>
+        <%= link_to("新建动态页", new_course_activity_path(@course), class: "btn btn-danger")%>
       </div>
       <hr/>
       <div class="operate-intro">
